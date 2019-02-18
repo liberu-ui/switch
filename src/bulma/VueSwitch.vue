@@ -1,5 +1,6 @@
 <template>
-    <label class="vue-switch" :class="[{ 'checked': value, 'disabled': disabled }]">
+    <label class="vue-switch"
+        :class="[{ 'checked': value, 'disabled': disabled }]">
         <input type="checkbox"
             class="checkbox"
             v-model="checked"
@@ -12,8 +13,6 @@
 <script>
 
 export default {
-    name: 'VueSwitch',
-
     props: {
         disabled: {
             type: Boolean,
