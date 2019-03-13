@@ -25,6 +25,7 @@ export default {
         },
         value: {
             type: [Boolean, Number],
+            default: false,
             required: true,
         },
     },
