@@ -11,8 +11,10 @@
             :checked="value"
             ref="input">
         <label class="control-switch"
-            :class="[{ 'checked': value, 'disabled': disabled }]"/>
-        <label class="control-label"><slot/></label>
+            :class="[{ 'checked': value, 'disabled': disabled || readonly }]"/>
+        <label class="control-label">
+            <slot/>
+        </label>
     </label>
 </template>
 
