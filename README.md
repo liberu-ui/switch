@@ -1,10 +1,10 @@
 # Vue Switch
 
-![npm license](https://img.shields.io/npm/l/@enso-ui/progress-bar.svg) 
-![npm download](https://img.shields.io/npm/dm/@enso-ui/progress-bar.svg) 
-![GitHub top language](https://img.shields.io/github/languages/top/enso-ui/progress-bar.svg) 
-![GitHub issues](https://img.shields.io/github/issues/enso-ui/progress-bar.svg) 
-![npm version](https://img.shields.io/npm/v/@enso-ui/progress-bar.svg) 
+![npm license](https://img.shields.io/npm/l/@enso-ui/switch.svg) 
+![npm download](https://img.shields.io/npm/dm/@enso-ui/switch.svg) 
+![GitHub top language](https://img.shields.io/github/languages/top/enso-ui/switch.svg) 
+![GitHub issues](https://img.shields.io/github/issues/enso-ui/switch.svg) 
+![npm version](https://img.shields.io/npm/v/@enso-ui/switch.svg) 
 
 Vue Switch
 
