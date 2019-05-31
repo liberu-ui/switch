@@ -126,9 +126,11 @@ export default {
         &.is-small {
             --height: 0.75rem;
         }
+
         &.is-medium {
             --height: 1.25rem;
         }
+
         &.is-large {
             --height: 1.5rem;
         }
