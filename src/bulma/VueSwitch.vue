@@ -4,7 +4,6 @@
         <input class="checkbox"
             type="checkbox"
             v-model="checked"
-            @click.stop
             @keydown.prevent.enter="$refs.input.click()"
             @change="$emit('input', checked)"
             :disabled="disabled || readonly"
