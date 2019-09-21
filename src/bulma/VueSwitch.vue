@@ -1,14 +1,16 @@
 <template>
-    <label class="vue-switch"
-        @click="$emit('input', !checked)">
+    <label class="vue-switch">
         <input class="checkbox"
             type="checkbox"
             v-model="checked"
+            @click.stop
             @keydown.prevent.enter="$emit('input', !checked)"
+            @keydown.space="$emit('input', !checked)"
             :disabled="disabled || readonly"
             :checked="value">
         <label class="control-switch"
-            :class="[{ 'checked': value, 'disabled': disabled || readonly }]"/>
+            :class="[{ 'checked': value, 'disabled': disabled || readonly }]"
+            @click="$emit('input', !checked)"/>
         <label class="control-label">
             <slot/>
         </label>
