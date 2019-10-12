@@ -4,8 +4,8 @@
             type="checkbox"
             v-model="checked"
             @click.stop
-            @keydown.prevent.enter="$emit('input', !checked)"
-            @keydown.space="$emit('input', !checked)"
+            @keydown.prevent.enter="toggle"
+            @keydown.space="toggle"
             :disabled="disabled || readonly"
             :checked="value">
         <label class="control-switch"
@@ -44,6 +44,14 @@ export default {
     watch: {
         value(value) {
             this.checked = value;
+        },
+    },
+
+    methods: {
+        toggle() {
+            if (!this.disabled && !this.readonly) {
+                this.$emit('input', !this.checked);
+            }
         },
     },
 };
