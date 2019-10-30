@@ -10,7 +10,7 @@
             :checked="value">
         <label class="control-switch"
             :class="[{ 'checked': value, 'disabled': disabled || readonly }]"
-            @click="$emit('input', !checked)"/>
+            @click="toggle"/>
         <label class="control-label">
             <slot/>
         </label>
