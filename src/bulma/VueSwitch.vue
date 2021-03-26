@@ -2,7 +2,7 @@
     <label class="vue-switch">
         <input class="checkbox"
             type="checkbox"
-            v-model="checked"
+            :value="value"
             @click.stop
             @keydown.prevent.enter="toggle"
             @keydown.space="toggle"
@@ -37,20 +37,10 @@ export default {
         },
     },
 
-    data: v => ({
-        checked: v.value,
-    }),
-
-    watch: {
-        value(value) {
-            this.checked = value;
-        },
-    },
-
     methods: {
         toggle() {
             if (!this.disabled && !this.readonly) {
-                this.$emit('input', !this.checked);
+                this.$emit('input', !this.value);
             }
         },
     },
