@@ -11,7 +11,8 @@
         <label class="control-switch"
             :class="[{ 'checked': value, 'disabled': disabled || readonly }]"
             @click="toggle"/>
-        <label class="control-label">
+        <label class="control-label"
+            @click="toggle">
             <slot/>
         </label>
     </label>
@@ -81,8 +82,7 @@ export default {
             align-items: center;
             justify-content: center;
 
-            &:before,
-            &:after {
+            &:before, &:after {
                 content: ' ';
                 position: absolute;
                 top: 0;
@@ -105,9 +105,11 @@ export default {
             &.checked {
                 border-color: #4a4a4a;
                 background-color: #4a4a4a;
+
                 &:before {
                     transform: scale(0);
                 }
+
                 &:after {
                     transform: translateX(calc(0.7 * var(--height)));
                 }
