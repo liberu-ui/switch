@@ -21,18 +21,19 @@
     "url": "https://github.com/enso-ui/switch/issues"
   },
   "homepage": "https://github.com/enso-ui/switch#readme",
-  "devDependencies": {
-    "@vue/eslint-config-airbnb": "^4.0.0",
-    "babel-eslint": "^10.0.1",
-    "cross-env": "^5.1.6",
-    "eslint": "^5.0.1",
-    "eslint-plugin-vue": "^5.0.0",
-    "laravel-mix": "3.0.0",
-    "node-sass": "^4.11.0",
-    "webpack-cli": "^3.2.1"
-  },
   "dependencies": {
     "bulma": "^0.9.0",
-    "vue": "^2.5.16"
+    "vue": "^3.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "5.0.0-beta.6",
+    "@vue/cli-plugin-eslint": "5.0.0-beta.6",
+    "@vue/eslint-config-airbnb": "^5.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-eslint": "^10.0.1",
+    "cross-env": "^6.0.0",
+    "eslint": "^7.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-vue": "^8.0.0"
   }
 }
