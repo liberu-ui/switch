@@ -1,6 +1,6 @@
 {
   "name": "@enso-ui/switch",
-  "version": "1.0.20",
+  "version": "2.0.0",
   "description": "Vue Switch",
   "main": "index.js",
   "scripts": {
