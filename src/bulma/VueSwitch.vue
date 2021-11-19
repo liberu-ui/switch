@@ -38,6 +38,8 @@ export default {
         },
     },
 
+    emits: ['update:modelValue'],
+
     methods: {
         toggle() {
             if (!this.disabled && !this.readonly) {
