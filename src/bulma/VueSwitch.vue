@@ -2,14 +2,14 @@
     <label class="vue-switch">
         <input class="checkbox"
             type="checkbox"
-            :value="value"
+            :value="modelValue"
             @click.stop
             @keydown.prevent.enter="toggle"
             @keydown.space="toggle"
             :disabled="disabled || readonly"
-            :checked="value">
+            :checked="modelValue">
         <label class="control-switch"
-            :class="[{ 'checked': value, 'disabled': disabled || readonly }]"
+            :class="[{ 'checked': modelValue, 'disabled': disabled || readonly }]"
             @click="toggle"/>
         <label class="control-label"
             @click="toggle">
@@ -31,17 +31,19 @@ export default {
             type: Boolean,
             default: false,
         },
-        value: {
+        modelValue: {
             type: [Boolean, Number],
             required: true,
             default: false,
         },
     },
 
+    emits: ['update:modelValue'],
+
     methods: {
         toggle() {
             if (!this.disabled && !this.readonly) {
-                this.$emit('input', !this.value);
+                this.$emit('update:modelValue', !this.modelValue);
             }
         },
     },
