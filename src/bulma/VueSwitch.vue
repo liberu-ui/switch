@@ -1,5 +1,9 @@
 <template>
     <label class="vue-switch">
+        <label class="control-label"
+            @click="toggle">
+            <slot name="before"/>
+        </label>
         <input class="checkbox"
             type="checkbox"
             :value="modelValue"
@@ -13,7 +17,7 @@
             @click="toggle"/>
         <label class="control-label"
             @click="toggle">
-            <slot/>
+            <slot name="after"/>
         </label>
     </label>
 </template>
@@ -119,7 +123,6 @@ export default {
         }
 
         .control-label {
-            padding-left: 0.5rem;
             cursor: pointer;
             font-size: calc(0.9 * var(--height));
         }
