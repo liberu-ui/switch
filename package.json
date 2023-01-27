@@ -1,5 +1,5 @@
 {
-  "name": "@enso-ui/switch",
+  "name": "@cgdsoftware/switch",
   "version": "2.0.7",
   "description": "Vue Switch",
   "main": "index.js",
