@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/enso-ui/switch.git"
+    "url": "git+https://github.com/liberu-ui/switch.git"
   },
   "keywords": [
     "switch",
@@ -18,9 +18,9 @@
   "author": "Adrian Ocneanu <aocneanu@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/enso-ui/switch/issues"
+    "url": "https://github.com/liberu-ui/switch/issues"
   },
-  "homepage": "https://github.com/enso-ui/switch#readme",
+  "homepage": "https://github.com/liberu-ui/switch#readme",
   "dependencies": {
     "bulma": "^0.9.0",
     "vue": "^3.0"
